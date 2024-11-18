@@ -14,7 +14,12 @@
 	<img src="White whole - CJ.png">
 
 	<div id="linkxs">
-		<a href="https://www.facebook.com/people/Camera-Jaunty/61565729168800" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+		<div id="SocLinks">
+			<a href="https://www.facebook.com/people/Camera-Jaunty/61565729168800" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://m.me/camerajaunty"><i class="fab fa-facebook-messenger"></i></a>
+		</div>
+		
 
 		<a href="tel:+639764647434"><span class="fa fa-phone"></span> 09764647434</a>
 		
@@ -43,9 +48,8 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-    background-image: url(bg.jpg);
+    background-image: url('bg.jpg');
     background-repeat: repeat;
-    background-size: cover;
     background-position: center;
     flex-wrap: wrap;
 
@@ -53,7 +57,7 @@
 			margin-bottom: 50px;
 			width: 100%;
 			max-width: 320px;
-			filter: invert(25%) sepia(8%) saturate(916%) hue-rotate(337deg) brightness(106%) contrast(93%);
+			/*filter: invert(25%) sepia(8%) saturate(916%) hue-rotate(337deg) brightness(106%) contrast(93%);*/
 		}
 
 		#linkxs{
@@ -63,6 +67,11 @@
 			flex-direction: column;
 			gap: 15px;
 
+			#SocLinks{
+				display: flex;
+				gap: 20px;
+			}
+
 			a{
 				color: white;
 				font-family: "Montserrat", serif;
@@ -71,8 +80,8 @@
 				text-decoration: none;
 
 				i{
-					font-size: 25px;
-					background: #ebc0aa;
+					font-size: 20px;
+					background: gray;
 					width: 35px;
 					height: 35px;
 					display: flex;
